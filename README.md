@@ -6,9 +6,13 @@ Biggy’s first public fan patch pack for the North American release of *Unlimit
 | --- | --- | --- |
 | Unlimited SaGa (USA) | `SLUS-20678` | `82BD9123` |
 
+## v1.0.1
+
+Updates the Status Baseline Tracker (the **Status Menu - Static Baseline Preview** toggle) to fix the Status menu crash reported in v1.0.0. If a save state is already frozen, restart PCSX2 and load your in-game memory card save or an earlier save state.
+
 ## Install in PCSX2
 
-1. Use a current [PCSX2](https://pcsx2.net/downloads/) build. Download and extract `UnSaGa-Patches-v1.0.0.zip` from [Releases](https://github.com/imbiggy/UnSaGa-Patches/releases). You can also download the two PNACH files directly from the table below.
+1. Use a current [PCSX2](https://pcsx2.net/downloads/) build. Download and extract `UnSaGa-Patches-v1.0.1.zip` from [the v1.0.1 release](https://github.com/imbiggy/UnSaGa-Patches/releases/tag/v1.0.1). You can also download the two PNACH files directly from the table below.
 2. Stop the game if it’s running. In PCSX2, use **Settings → Folders** to locate the active **Patches** and **Cheats** directories. Back up any existing `SLUS-20678_82BD9123.pnach` in either directory before replacing it.
 3. Copy each file into the matching PCSX2 folder. The two files have the same name, so keep them in their separate folders.
 
