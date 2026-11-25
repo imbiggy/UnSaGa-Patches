@@ -1,0 +1,131 @@
+gametitle=Unlimited SaGa (USA) (SLUS-20678)
+
+[Blacksmith - Rare material success]
+description=Always passes the rare material check.
+patch=1,EE,0041B951,extended,00000001
+
+[Blacksmith - Wep./Acc. Elemental arts addition]
+description=Always passes 2nd slot elemental mutation checks.
+patch=1,EE,0041C1B0,extended,00000001
+
+[Blacksmith - Shields Elemental arts addition]
+description=Always passes 4th slot elemental mutation checks.
+patch=1,EE,0041C1C7,extended,00000001
+
+[Blacksmith - Always Unlock one additional slot]
+description=Adds one unlocked ability slot per smithing operation, capped at four.
+patch=1,EE,2041C183,extended,44017E8C
+
+[Growth Panel - Base B 80]
+description=Sets the shared Growth Panel base to 80, avreage lv4 Panels.
+patch=1,EE,204347C0,extended,000A210A
+patch=1,EE,204347C4,extended,00005034
+patch=1,EE,204347C8,extended,D6F40200
+patch=1,EE,204347CC,extended,00000001
+patch=1,EE,10401CFA,extended,000047C0
+patch=1,EE,10401CFC,extended,00000003
+
+[Growth Panel - Base B 99 (Do not use with previous)]
+description=Sets the shared Growth Panel base to 99, , avreage lv5 Panels.
+patch=1,EE,204347C0,extended,000A210A
+patch=1,EE,204347C4,extended,00006334
+patch=1,EE,204347C8,extended,D6F40200
+patch=1,EE,204347CC,extended,00000001
+patch=1,EE,10401CFA,extended,000047C0
+patch=1,EE,10401CFC,extended,00000003
+
+[Growth Panel - Quarter Gate to Half]
+description=Changes quarter-nested action-table gates from 1 in 4 to 1 in 2 for all affected panels.
+patch=1,EE,0041DD24,extended,00000002
+
+[Growth Panel - Sixteenth Gate to Quarter]
+description=Changes sixteenth-nested action-table gates from 1 in 16 to 1 in 4 for all affected panels.
+patch=1,EE,0041DD4F,extended,00000004
+
+[Growth Panel - Open Both Nested Gates]
+description=Changes both gated nested rolls to always proceed for all affected panels.
+patch=1,EE,0041DD24,extended,00000001
+patch=1,EE,0041DD4F,extended,00000002
+
+[Treasure Slime - Always Tablet]
+description=C4-C6: passes loot gate, 50 percent first route and guaranteed second route.
+patch=1,EE,D08923BA,extended,080001E0
+patch=1,EE,D08923B8,extended,07000000
+patch=1,EE,D087E619,extended,063100C3
+patch=1,EE,D087E619,extended,052100C7
+patch=1,EE,D1E56BB0,extended,04001011
+patch=1,EE,D1E56BBC,extended,03003012
+patch=1,EE,01E56BB6,extended,00000000
+patch=1,EE,01E56BBE,extended,00000002
+patch=1,EE,01E56C6D,extended,00000001
+
+[Treasure Slime - Higher Tablet Levels (Requires Always Tablet)]
+description=Requires Always Tablet: first route Lv4 and second route Lv2-3.
+patch=1,EE,D08923BA,extended,230001E0
+patch=1,EE,D08923B8,extended,22000000
+patch=1,EE,D087E619,extended,213100C3
+patch=1,EE,D087E619,extended,202100C7
+patch=1,EE,D1E56BB0,extended,1F001011
+patch=1,EE,D1E56BBC,extended,1E003012
+patch=1,EE,D1E56BB6,extended,1D010000
+patch=1,EE,D1E56BBE,extended,1C010002
+patch=1,EE,D1E56C6D,extended,1B010001
+patch=1,EE,01E56C1A,extended,00000082
+patch=1,EE,01E56C1B,extended,0000006C
+patch=1,EE,01E56C1C,extended,00000005
+patch=1,EE,01E56C1D,extended,00000000
+patch=1,EE,01E56C62,extended,0000000A
+patch=1,EE,01E56C63,extended,00000000
+patch=1,EE,01E56C64,extended,00000000
+patch=1,EE,01E56C65,extended,00000000
+patch=1,EE,01E56C66,extended,00000034
+patch=1,EE,01E56C67,extended,0000004E
+patch=1,EE,01E56C68,extended,00000000
+patch=1,EE,01E56C69,extended,00000000
+patch=1,EE,01E56C6A,extended,00000000
+patch=1,EE,01E56C82,extended,0000000A
+patch=1,EE,01E56C83,extended,00000000
+patch=1,EE,01E56C84,extended,00000000
+patch=1,EE,01E56C85,extended,00000000
+patch=1,EE,01E56C86,extended,00000034
+patch=1,EE,01E56C87,extended,000000FF
+patch=1,EE,01E56C88,extended,00000000
+patch=1,EE,01E56C89,extended,00000000
+patch=1,EE,01E56C8A,extended,00000000
+patch=1,EE,01E56C8B,extended,00000002
+patch=1,EE,01E56C8C,extended,000000A3
+patch=1,EE,01E56C8D,extended,0000006C
+patch=1,EE,01E56C8E,extended,00000005
+patch=1,EE,01E56C8F,extended,00000000
+
+[Magic Tablet - One Selection Learns One Spell (Experimental)]
+description=Experimental: makes the normal learning award 255.
+patch=1,EE,D08923BA,extended,050001E0
+patch=1,EE,D08923B8,extended,04000000
+patch=1,EE,D1E55F04,extended,03000C11
+patch=1,EE,D1E55F12,extended,02000A00
+patch=1,EE,01E55F0A,extended,00000000
+patch=1,EE,01E55F18,extended,000000FF
+
+[Pharr Balance - Maximum LP 18]
+description=Sets Pharr maximum LP to 18.
+patch=1,EE,00874FD6,extended,00000012
+
+[Mordeus Balance - Base Weight 18 to 13]
+description=Mordeus: combat body-weight table 18 to 13.
+// US mes_253/255 body table
+patch=1,EE,D1E480EE,extended,06000F0B
+patch=1,EE,D1E480F2,extended,05005534
+patch=1,EE,D1E480F4,extended,0400E481
+patch=1,EE,D1E480F6,extended,03001344
+patch=1,EE,D1E48156,extended,02000E0D
+patch=1,EE,D1E48170,extended,01001418
+patch=1,EE,01E48174,extended,0000000D
+// US mes_254 body table
+patch=1,EE,D1E05B94,extended,06000F0B
+patch=1,EE,D1E05B98,extended,0500FB34
+patch=1,EE,D1E05B9A,extended,0400E05B
+patch=1,EE,D1E05B9C,extended,03001344
+patch=1,EE,D1E05BFC,extended,02000E0D
+patch=1,EE,D1E05C16,extended,01001418
+patch=1,EE,01E05C1A,extended,0000000D
