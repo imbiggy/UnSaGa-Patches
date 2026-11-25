@@ -3585,7 +3585,8 @@ patch=1,EE,00C0E54E,extended,000000C4
 description=Live monster rank, treasure and battle contributions, with the projected Baseline.
 author=im_biggy
 // SLUS-20678 / 82BD9123. Uses the existing patch toggle.
-// Version 2. Use a pre-menu save state after updating from version 1.
+// Version 3. Corrects the return to the original submenu code after closing the overlay.
+// If a saved state is already frozen, start from an earlier point.
 // Refresh by opening the adventure party menu or moving its cursor after loading a save state.
 // M uses floor(min(M,99)/2). X and Y use floor(min(X or Y,99)/4).
 // Projected Baseline includes the verified adventure module Z and caps at 99.
@@ -3805,21 +3806,21 @@ patch=1,EE,20EE2DD0,extended,06031400
 patch=1,EE,20EE2DD4,extended,00000300
 patch=1,EE,20EE2DD8,extended,00000000
 patch=1,EE,20EE2DDC,extended,04040300
-patch=1,EE,D08923B8,extended,7E000000
-patch=1,EE,D08923BA,extended,7D0000C0
-patch=1,EE,D0897BB0,extended,7C0000CE
-patch=1,EE,D0897BB2,extended,7B001400
-patch=1,EE,D08923BC,extended,7A00C000
-patch=1,EE,D08923BE,extended,790000C0
-patch=1,EE,D08923C0,extended,78003000
-patch=1,EE,D08923C2,extended,770000EE
-patch=1,EE,D0C00000,extended,76000001
-patch=1,EE,D0C00004,extended,75000008
-patch=1,EE,D0C00006,extended,74000000
-patch=1,EE,D0C00008,extended,73006403
-patch=1,EE,D0C0000A,extended,7200006D
-patch=1,EE,D0C0000C,extended,71001200
-patch=1,EE,D0C0000E,extended,70000110
+patch=1,EE,D08923B8,extended,80000000
+patch=1,EE,D08923BA,extended,7F0000C0
+patch=1,EE,D0897BB0,extended,7E0000CE
+patch=1,EE,D0897BB2,extended,7D001400
+patch=1,EE,D08923BC,extended,7C00C000
+patch=1,EE,D08923BE,extended,7B0000C0
+patch=1,EE,D08923C0,extended,7A003000
+patch=1,EE,D08923C2,extended,790000EE
+patch=1,EE,D0C00000,extended,78000001
+patch=1,EE,D0C00004,extended,77000008
+patch=1,EE,D0C00006,extended,76000000
+patch=1,EE,D0C00008,extended,75006403
+patch=1,EE,D0C0000A,extended,7400006D
+patch=1,EE,D0C0000C,extended,73001200
+patch=1,EE,D0C0000E,extended,72000110
 patch=1,EE,20EE2DE0,extended,00020600
 patch=1,EE,20EE2DE4,extended,04010600
 patch=1,EE,20EE2DE8,extended,00000000
@@ -3923,15 +3924,17 @@ patch=1,EE,20C0BF40,extended,2E2AC002
 patch=1,EE,00C0BF44,extended,00000000
 patch=1,EE,00C0BFDB,extended,00000012
 patch=1,EE,20C0BFDC,extended,01160810
-patch=1,EE,20C0BFE0,extended,0007C20B
-patch=1,EE,20C0BFE4,extended,00072434
-patch=1,EE,10C0BFE8,extended,00000138
+patch=1,EE,20C0BFE0,extended,0B021012
+patch=1,EE,20C0BFE4,extended,340007C2
+patch=1,EE,20C0BFE8,extended,38000724
+patch=1,EE,20C0BFEC,extended,00A73B02
+patch=1,EE,00C0BFF0,extended,00000000
 patch=1,EE,20C08F08,extended,00BF4002
 patch=1,EE,00C08F0C,extended,00000000
-patch=1,EE,10C0A732,extended,0000DB03
-patch=1,EE,20C0A734,extended,000000BF
-patch=1,EE,10C0A738,extended,00000000
-patch=1,EE,00C0A73A,extended,00000000
+patch=1,EE,10C0A732,extended,0000DB02
+patch=1,EE,20C0A734,extended,240000BF
+patch=1,EE,10C0A738,extended,00000007
+patch=1,EE,00C0A73A,extended,00000038
 
 [Chronos Delta - Member Reward]
 description=Change Reverse Delta to Chronos Delta.
