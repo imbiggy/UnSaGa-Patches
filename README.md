@@ -6,13 +6,17 @@ Biggy’s first public fan patch pack for the North American release of *Unlimit
 | --- | --- | --- |
 | Unlimited SaGa (USA) | `SLUS-20678` | `82BD9123` |
 
+## v1.0.2
+
+Adds two experimental **Cheats** options. If you’re upgrading from v1.0.1, replace `cheats/SLUS-20678_82BD9123.pnach` and restart from an in-game save. See [Other Cheats](#other-cheats) for drop rules and compatibility.
+
 ## v1.0.1
 
 Updates the Status Baseline Tracker (the **Status Menu - Static Baseline Preview** toggle) to fix the Status menu crash reported in v1.0.0. If a save state is already frozen, restart PCSX2 and load your in-game memory card save or an earlier save state.
 
 ## Install in PCSX2
 
-1. Use a current [PCSX2](https://pcsx2.net/downloads/) build. Download and extract `UnSaGa-Patches-v1.0.1.zip` from [the v1.0.1 release](https://github.com/imbiggy/UnSaGa-Patches/releases/tag/v1.0.1). You can also download the two PNACH files directly from the table below.
+1. Use a current [PCSX2](https://pcsx2.net/downloads/) build. Download and extract [UnSaGa-Patches-v1.0.2.zip](https://github.com/imbiggy/UnSaGa-Patches/raw/refs/heads/main/UnSaGa-Patches-v1.0.2.zip). You can also download the two PNACH files directly from the table below.
 2. Stop the game if it’s running. In PCSX2, use **Settings → Folders** to locate the active **Patches** and **Cheats** directories. Back up any existing `SLUS-20678_82BD9123.pnach` in either directory before replacing it.
 3. Copy each file into the matching PCSX2 folder. The two files have the same name, so keep them in their separate folders.
 
@@ -50,6 +54,9 @@ In **Cheats**, turn on these three entries. Pick any **Patches** you like alongs
 
 ### Other Cheats
 
+> [!WARNING]
+> **Treasure Slime drop cheats are incompatible.** Before enabling **Treasure Slime Drops - Experimental**, turn off both **Treasure Slime - Always Tablet** and **Treasure Slime - Higher Tablet Levels (Requires Always Tablet)** in PCSX2’s **Cheats** tab. Restart the game and load an in-game save after switching options.
+
 | Option | What it does |
 | --- | --- |
 | **Blacksmith** | Separate toggles to guarantee the rare material check, guarantee elemental additions for weapons/accessories or shields, and unlock one extra ability slot per smithing operation up to four. |
@@ -57,6 +64,8 @@ In **Cheats**, turn on these three entries. Pick any **Patches** you like alongs
 | **Treasure Slime - Always Tablet** | Makes the supported Treasure Slime loot routes award a tablet. |
 | **Treasure Slime - Higher Tablet Levels (Requires Always Tablet)** | Enables higher-level tablet drops. Keep **Always Tablet** on when using this option. |
 | **Magic Tablet - One Selection Learns One Spell (Experimental)** | Lets one normal learning selection teach a spell. Use a separate save when trying this experimental option. |
+| **Gun Drops - Copper Guns in Treasure Chests (Experimental)** | Allows Copper Guns with Shoot and 40 durability in newly generated field chests. Chest contents are set when the area loads. |
+| **Treasure Slime Drops - Experimental** | Green and Red roll a 1-in-2 first tablet route, then a 1-in-8 second tablet route on a miss. If both miss, Green drops Dragon Scale and Red drops a Copper Gun. Yellow always uses the first tablet route. Keep a free inventory slot for items or a free reward slot for tablets. |
 
 ## If the mods don’t show up
 
